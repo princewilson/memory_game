@@ -1,14 +1,43 @@
-div {
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    border: 1px solid black;
+.gameContainer {
     display: flex;
+    width: 350px;
+    height: 380px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    margin-bottom: 2px;
+    display: flex;
+    cursor: pointer;
+}
+
+img {
+    padding: 20px 10px 20px 10px;
+    background-color: grey;
+    border: 1px solid grey;
+    border-radius: 25%;
+}
+
+.card:active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease-in-out
 }
 
 .front,
 .back {
     position: absolute;
+}
+
+.front {
+    transform: rotateY(180deg);
+}
+
+.back {
     backface-visibility: hidden;
 }
 
