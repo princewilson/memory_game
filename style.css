@@ -1,4 +1,4 @@
-.gameContainer {
+/* .gameContainer {
     display: flex;
     width: 350px;
     height: 380px;
@@ -49,4 +49,67 @@ img {
 .rotateBack {
     transform: rotateY(-180deg);
     transition: transform 0.5s ease-in-out;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+.navbar-brand,
+.nav-links {
+    height: 100%;
+    border: 1px solid yellow;
+}
+.nav-links ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    height: 100%;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    padding-right: 5vw;
+    font-size: 1.2rem;
+}
+
+.nav-links ul li a{
+    height: 100%;
+}
+header {
+    background-color: rgb(156, 147, 147);
+    color: white;
+    height: 60px;
+}
+
+.nav-links ul li:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 450px) {
+    .navbar-brand {
+        font-size: 1.22rem;
+    }
+
+    .nav-links ul li a {
+        font-size: 1rem;
+    }
 }
