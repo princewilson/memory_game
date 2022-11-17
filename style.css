@@ -69,15 +69,17 @@ nav {
 .navbar-brand {
     font-size: 1.5rem;
     padding-left: 20px;
+    padding-top: 13px;
 }
+
 .navbar-brand,
 .nav-links {
     height: 100%;
-    border: 1px solid yellow;
 }
+
 .nav-links ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;
     margin: 0;
     height: 100%;
@@ -86,10 +88,15 @@ nav {
 .nav-links ul li a {
     text-decoration: none;
     color: white;
-    padding-right: 5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
     font-size: 1.2rem;
 }
-
+.nav-links ul li {
+    padding-top: 13px;
+    text-align: center;
+    height: 100%;
+}
 .nav-links ul li a{
     height: 100%;
 }
@@ -100,8 +107,9 @@ header {
 }
 
 .nav-links ul li:hover {
-    background-color: white;
+    background-color: rgb(124, 116, 116);
     color: black;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 450px) {
