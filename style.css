@@ -103,13 +103,37 @@ nav {
 header {
     background-color: rgb(156, 147, 147);
     color: white;
-    height: 60px;
+    height: 50px;
 }
 
 .nav-links ul li:hover {
     background-color: rgb(124, 116, 116);
     color: black;
     cursor: pointer;
+}
+
+.collapse {
+    display: none;
+    margin-top: 12px;
+    height: fit-content;
+    flex-direction: column;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 20%;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.collapse span {
+    width: 25px;
+    height: 2px;
+    margin: 2px;
+    background-color: white;
+}
+
+.collapse:active {
+    transform: scale(0.85);
+    transition: transform 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 450px) {
@@ -119,5 +143,15 @@ header {
 
     .nav-links ul li a {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .collapse {
+        display: flex;
+    }
+    
+    .nav-links {
+        display: none;
     }
 }
