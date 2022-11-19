@@ -92,14 +92,17 @@ nav {
     padding-right: 3vw;
     font-size: 1.2rem;
 }
+
 .nav-links ul li {
     padding-top: 13px;
     text-align: center;
     height: 100%;
 }
+
 .nav-links ul li a{
     height: 100%;
 }
+
 header {
     background-color: rgb(156, 147, 147);
     color: white;
@@ -122,6 +125,7 @@ header {
     border-radius: 20%;
     padding: 2px;
     cursor: pointer;
+    float: right;
 }
 
 .collapse span {
@@ -146,12 +150,50 @@ header {
     }
 }
 
-@media screen and (max-width: 400px) {
-    .collapse {
-        display: flex;
+@media screen and (max-width: 400px) { 
+    header {
+        height: 170px;
     }
     
-    .nav-links {
+    .collapse {
+        display: flex;
+        margin-top: 0;
+    }
+    
+    .nav-links ul{
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .navbar-brand {
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid white;
+    }
+
+    .nav-links ul li {
+        background-color: rgb(124, 116, 116);
+        border-bottom: 1px solid black;
+    }
+
+    .nav-links ul li:hover {
+        background-color: rgb(156, 147, 147);
+    }
+
+    .nav-links.active {
         display: none;
+    }
+
+    header.active {
+        height: 50px;
     }
 }
