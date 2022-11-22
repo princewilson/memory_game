@@ -60,6 +60,7 @@ body{
     padding: 0;
 }
 
+/* header */
 nav {
     display: flex;
     justify-content: space-between;
@@ -68,13 +69,14 @@ nav {
 
 .navbar-brand {
     font-size: 1.5rem;
-    padding-left: 20px;
+    padding-left: 8vw;
     padding-top: 13px;
 }
 
 .navbar-brand,
 .nav-links {
     height: 100%;
+    margin-right: 8vw;;
 }
 
 .nav-links ul {
@@ -140,6 +142,12 @@ header {
     transition: transform 0.2s ease-in-out;
 }
 
+@media screen and (max-width: 600px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .navbar-brand {
         font-size: 1.22rem;
@@ -155,6 +163,10 @@ header {
         height: 170px;
     }
     
+    .navbar-brand {
+        font-size: 1.22rem;
+    }
+
     .collapse {
         display: flex;
         margin-top: 0;
@@ -196,4 +208,36 @@ header {
     header.active {
         height: 50px;
     }
+}
+
+/* footer */
+
+footer {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(156, 147, 147);
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+footer .container .caption {
+    font-size: 1.5rem;
+}
+
+footer .container .links {
+    display: flex;
+    gap: 1rem;
+    transform: scaleX(1.1);
+    padding-right: 3vw;
 }
