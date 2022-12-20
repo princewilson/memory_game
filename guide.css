@@ -153,6 +153,14 @@ header {
     }
 }
 
+/* main  */
+.guideContainer {
+    width: 85vw;
+    margin: auto;
+    margin-top: 20vh;
+    color: brown;
+}
+
 /* footer */
 
 footer {
