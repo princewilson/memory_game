@@ -227,6 +227,11 @@ header {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .gameContainer {
+        transform: scaleX(0.8);
+    }
+}
 /* footer */
 
 footer {

@@ -160,7 +160,11 @@ header {
     margin-top: 20vh;
     color: brown;
 }
-
+@media screen and (max-width: 500px) {
+    .gameContainer {
+        transform: scaleX(0.8);
+    }
+}
 /* footer */
 
 footer {
@@ -168,7 +172,7 @@ footer {
     margin: 0;
     background-color: rgb(156, 147, 147);
     height: 50px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     color: white;
