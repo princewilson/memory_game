@@ -230,6 +230,7 @@ header {
 /* footer */
 
 footer {
+    position: absolute;
     padding: 0;
     margin: 0;
     background-color: rgb(156, 147, 147);
