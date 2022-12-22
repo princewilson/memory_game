@@ -27,7 +27,7 @@ back_images.forEach((back_image) => {
                 if(pairCounts === 8) {
                     var div = document.getElementById("hiddenDiv");
                     endTime = Date.now();
-                    div.innerHTML = `Yay 🥳! You've completed the game in ${(endTime - startTime) / 1000} seconds!`;
+                    div.innerHTML = `Yay, Congrats🥳! You've completed the game in ${(endTime - startTime) / 1000} seconds!`;
                     div.hidden = false;
                 }
             } else {
