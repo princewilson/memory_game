@@ -36,7 +36,7 @@ back_images.forEach((back_image) => {
                     card1.parentElement.lastElementChild.classList.remove("rotate");
                     card2.parentElement.classList.remove("rotate");
                     card2.parentElement.lastElementChild.classList.remove("rotate");
-                }, 500);
+                }, 1000);
             }
             counter = 0;
         }
