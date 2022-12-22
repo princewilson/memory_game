@@ -172,7 +172,7 @@ header {
     }
 }
 
-@media screen and (max-width: 400px) { 
+@media screen and (max-width: 300px) { 
     header {
         height: 170px;
     }
